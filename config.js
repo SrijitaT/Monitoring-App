@@ -3,14 +3,16 @@ environments.development = {
 	httpPort: 3002,
 	httpsPort: 3003,
 	envName: 'development',
-	hashSecret: 'a secret'
+	hashSecret: 'a secret',
+	maxChecks: 5
 };
 
 environments.production = {
 	httpPort: 5000,
 	httpsPort: 5001,
 	envName: 'production',
-	hashSecret: 'also a secret'
+	hashSecret: 'also a secret',
+	maxChecks: 5
 };
 
 const currEnv =
